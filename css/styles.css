@@ -568,6 +568,10 @@ padding-bottom: 118px;
   margin-bottom: 50px;
 
 }
+.countries-list{
+  display: flex;
+  justify-content: space-around;
+}
 .countries-heading{
   padding: 0;
   margin: 0;
@@ -579,23 +583,40 @@ padding-bottom: 118px;
   color: #fff;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 80px;
+
 }
 .countries-item{
   width: 433px;
-  height: 396px;
+
+height: auto;
+min-height: 396px;
   background-color: #F8F8F2
+}
+.countries-item:not(:last-child){
+  margin-right: 20px;
+}
+.countries-item-box{
+  padding-top: 45px;
+  display: flex;
+justify-content: space-around;
 }
 .countries-item-img{
 
   margin: 0;
   padding: 0;
-padding-top: 45px;
+
 padding-right: 55px;
-padding-left: 258px;
 
 }
+.countries-item-two-img{
+  width: 120px;
+  height: 120px;
+}
+.countries-item-three-img{
+  width: 120px;
+  height: 107px;
+}
 .countries-item-heading {
-
 width: 231px;
 color: #000;
 font-size: 40px;
@@ -605,13 +626,16 @@ font-family: 'Roboto', sans-serif;
 margin: 0;
 padding: 0;
 margin-top: 7px;
-
-
-
-
 padding-left: 20px;
-
 margin-bottom: 10px;
+padding-top: 95px;
+}
+.countries-item-heading-two{
+ padding-top: 142px;
+
+}
+.countries-item-heading-three{
+padding-top: 142px;
 }
 .countries-item-text {
   margin: 0;
