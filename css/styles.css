@@ -23,6 +23,12 @@ body {
   background-color: #fff;
   color: #222;
 }
+*:focus{
+  outline: 5px dotted #C99B67;
+  outline-offset: 5px;
+  outline-width: 4px;
+
+}
 img{
   max-width: 100%;
   height: auto;
@@ -48,6 +54,7 @@ img{
   background-size:cover;
 
 }
+
 /* SITE-HEADER */
 .header-container{
   padding-top: 45px;
@@ -142,6 +149,10 @@ img{
   margin: 0;
   padding: 0;
   margin-bottom: 50px;
+  letter-spacing: 0px;
+}
+.about-text{
+width: 372px;
 }
 .hero-link {
   text-decoration: none;
@@ -173,10 +184,9 @@ img{
 
 /* PRODUCT */
 .product {
-  width: 1440px;
+  width: 1400px;
   margin-top: 20px;
-  padding-left: 5px;
-  padding-right: 5px;
+
   background-color: #F8F8F2;
   display: flex;
   flex-direction: column;
@@ -231,6 +241,13 @@ margin-right: 117px;
 margin-top: 121px;
 margin-bottom: 10px;
 }
+.about-hero-content-heading{
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+  padding-top: 160px;
+}
 .product-box-text {
   color: #333;
   font-size: 22px;
@@ -243,7 +260,7 @@ line-height: 34px;
 .site-content{
   padding-top: 20px;
   width:100%;
-  max-width: 1440px;
+  max-width: 1400px;
 
   height: 703px;
   background-image:url(../img/site-content.jpg) ;
@@ -290,9 +307,6 @@ margin-bottom: 80px;
   margin-left: auto;
   gap: 20px;
 
-
-
-
 }
 .site-content-item {
   width: 433px;
@@ -305,9 +319,316 @@ margin-bottom: 80px;
   height: 500px;
   padding: 0;
   margin: 0;
+  margin-bottom: 28px;
 }
 .site-content-item-heading {
-}
-.site-content-item-text {
+  color: #333;
+font-size: 30px;
+font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+
+
 
 }
+.site-content-item-text {
+  width: 377px;
+font-size: 18px;
+font-weight: 400;
+line-height: 28px;
+  font-family: 'Roboto', sans-serif;
+  gap: 76px;
+padding-bottom: 80px;
+
+}
+.about-us-text{
+  width: 626px;
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 200px;
+}
+
+/* JOBS-BOX */
+.jobs-box {
+  height: 826px;
+
+  width: 1400px;
+  margin-top: 289px;
+  margin-bottom: 50px;
+
+
+background-color: rgba(10, 119, 95, 1);
+
+
+
+}
+.jobs-container{
+  width: 100%;
+  max-width: 1340px;
+
+}
+
+.jobs-box-heading {
+  color: #fff;
+  text-align: center;
+font-size: 50px;
+font-weight: 700;
+line-height: normal;
+padding-top: 50px;
+margin-bottom: 80px;
+font-family: 'Roboto', sans-serif;
+
+}
+.jobs-box-kvadrat-display{
+  display: flex;
+
+
+}
+.jobs-box-kvadrat{
+  width: 54px;
+  height: 54px;
+ background-color: #F8F8F2;
+  border: 4px solid #C99B67;
+  margin-bottom: 20px;
+
+}
+.jobs-box-kvadrat:not(:last-child){
+  margin-right: 393px;
+}
+
+.jobs-box-text-box{
+width: 433px;
+height: 396px;
+background-color: rgba(248, 248, 242, 1);
+margin-bottom: 60px;
+}
+.jobs-box-text-box:not(:last-child){
+  margin-right: 20px;
+}
+.jobs-box-text-box-number{
+
+color: #333;
+font-size: 64px;
+font-weight: 400;
+line-height: normal;
+opacity: 0.8;
+font-family: 'Roboto', sans-serif;
+padding-top: 20px;
+padding-left: 348px;
+padding-right: 20px;
+
+
+
+}
+.jobs-box-text-box-heading {
+  margin: 0;
+  padding: 0;
+
+  margin-top: 45px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: normal;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+
+}
+.jobs-box-text-box-text {
+  width: 385px;
+  color: #333;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+.jobs-link-box{
+  padding-left: 604px;
+  padding-bottom: 50px;
+}
+.jobs-link{
+margin-top: 60px;
+
+
+  background-color: rgba(201, 155, 103, 1);
+}
+/* SITE-FOOTER */
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 71px;
+  padding-bottom: 70px;
+  width: 1400px;
+}
+
+
+.footer-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.footer-list-item:not(:last-child){
+  margin-right: 30px;
+}
+.footer-item-link:hover{
+  opacity: 0.8;
+
+}
+.footer-item-link:active{
+  opacity: 0.6;
+}
+
+/* ABOUT HERO */
+.about-hero{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1400px;
+  margin-top: 20px;
+  background-color: #F8F8F2;
+  padding-right: 64px;
+
+}
+.about-hero-img{
+  width: 360px;
+  height: 364px;
+  object-fit: cover;
+  padding-left: 165px;
+}
+.about-hero-content{
+  padding-right: 64px;
+}
+/* ABOUT-CONTENT */
+.about-content{
+margin-top: 160px;
+margin-bottom: 20px;
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 1400px;
+height: 510px;
+
+  background-image:url(../img/about-content.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.about-content-box {
+padding-top: 100px;
+padding-left: 143px;
+
+
+}
+
+.about-content-heading {
+  color: #fff;
+  text-transform: uppercase;
+  width: 397px;
+  margin-bottom: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.about-content-text {
+  margin: 0;
+  padding: 0;
+color: #fff;
+width: 696px;
+letter-spacing: 0.7px;
+padding-bottom: 118px;
+
+}
+.about-content-img{
+  margin: 0;
+  padding: 0;
+  width: 550px;
+  height: 500px;
+  margin-left: 38px;
+ padding-bottom: 160px;
+
+
+}
+/* ABOUT MARKAZLAR */
+.countries{
+  width: 1400px;
+  height: 685px;
+  background-color: rgba(10, 119, 95, 1);
+  margin-bottom: 50px;
+
+}
+.countries-heading{
+  padding: 0;
+  margin: 0;
+  padding-top: 50px;
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 80px;
+}
+.countries-item{
+  width: 433px;
+  height: 396px;
+  background-color: #F8F8F2
+}
+.countries-item-img{
+
+  margin: 0;
+  padding: 0;
+padding-top: 45px;
+padding-right: 55px;
+padding-left: 258px;
+
+}
+.countries-item-heading {
+
+width: 231px;
+color: #000;
+font-size: 40px;
+font-weight: 500;
+line-height: normal;
+font-family: 'Roboto', sans-serif;
+margin: 0;
+padding: 0;
+margin-top: 7px;
+
+
+
+
+padding-left: 20px;
+
+margin-bottom: 10px;
+}
+.countries-item-text {
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+
+color: #333;
+font-size: 18px;
+font-weight: 400;
+line-height: 28px;
+font-family: 'Roboto', sans-serif;
+
+}
+.countries-number{
+  padding-bottom: 40px;
+  padding-left: 20px;
+
+}
+
+
